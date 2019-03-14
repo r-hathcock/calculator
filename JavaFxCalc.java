@@ -1,5 +1,7 @@
+/* 
+ * PURPOSE: This is a basic calculator. Used to perform simple arithmetic. 
+ */
 package JavaFxCalc;
-
 import java.text.DecimalFormat;
 import java.util.Scanner;
 import javafx.application.Application;
@@ -38,7 +40,7 @@ public class JavaFxCalc extends Application
 		// Create a scene and place a button in the scene.
 		Pane pane = new Pane();
 		
-		// create text field
+		// text field
 		TextField textfield = new TextField();
 		textfield.setLayoutX(10);
 		textfield.setLayoutY(10);
@@ -47,299 +49,280 @@ public class JavaFxCalc extends Application
 		textfield.setEditable(false);
 		textfield.setStyle("-fx-border-color: black;");
 		
-		// create buttons
+		// Buttons
 		Button bt0 = new Button("0");
 			bt0.setPrefSize(35, 35);
 			bt0.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					if (opPressed == true)
+					@Override
+					public void handle(ActionEvent arg0) 
 					{
-						opPressed = false;
-						textfield.clear();
+						if (opPressed == true)
+						{
+							opPressed = false;
+							textfield.clear();
+						}
+						textfield.setText(textfield.getText() + "0");
 					}
-					
-					textfield.setText(textfield.getText() + "0");
 				}
-			}
-							);
+			);
 			
 		Button bt1 = new Button("1");
 			bt1.setPrefSize(35, 35);
 			bt1.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					if (opPressed == true)
+					@Override
+					public void handle(ActionEvent arg0) 
 					{
-						opPressed = false;
-						textfield.clear();
+						if (opPressed == true)
+						{
+							opPressed = false;
+							textfield.clear();
+						}
+						textfield.setText(textfield.getText() + "1");
 					}
-					
-					textfield.setText(textfield.getText() + "1");
 				}
-			}
-							);
+			);
 			
 		Button bt2 = new Button("2");
 			bt2.setPrefSize(35, 35);
 			bt2.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					if (opPressed == true)
+					@Override
+					public void handle(ActionEvent arg0) 
 					{
-						opPressed = false;
-						textfield.clear();
+						if (opPressed == true)
+						{
+							opPressed = false;
+							textfield.clear();
+						}
+						textfield.setText(textfield.getText() + "2");
 					}
-					
-					textfield.setText(textfield.getText() + "2");
 				}
-			}
-							);
+			);
 			
 		Button bt3 = new Button("3");
 			bt3.setPrefSize(35, 35);
 			bt3.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					if (opPressed == true)
+					@Override
+					public void handle(ActionEvent arg0) 
 					{
-						opPressed = false;
-						textfield.clear();
+						if (opPressed == true)
+						{
+							opPressed = false;
+							textfield.clear();
+						}
+						textfield.setText(textfield.getText() + "3");
 					}
-					
-					textfield.setText(textfield.getText() + "3");
 				}
-			}
-							);
+			);
 			
 		Button bt4 = new Button("4");
 			bt4.setPrefSize(35, 35);
 			bt4.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					if (opPressed == true)
+					@Override
+					public void handle(ActionEvent arg0) 
 					{
-						opPressed = false;
-						textfield.clear();
+						if (opPressed == true)
+						{
+							opPressed = false;
+							textfield.clear();
+						}
+						textfield.setText(textfield.getText() + "4");
 					}
-					
-					textfield.setText(textfield.getText() + "4");
 				}
-			}
-							);
+			);
 			
 		Button bt5 = new Button("5");
 			bt5.setPrefSize(35, 35);
 			bt5.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					if (opPressed == true)
+					@Override
+					public void handle(ActionEvent arg0) 
 					{
-						opPressed = false;
-						textfield.clear();
+						if (opPressed == true)
+						{
+							opPressed = false;
+							textfield.clear();
+						}
+						textfield.setText(textfield.getText() + "5");
 					}
-					
-					textfield.setText(textfield.getText() + "5");
 				}
-			}
-							);
+			);
 			
 		Button bt6 = new Button("6");
 			bt6.setPrefSize(35, 35);
 			bt6.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					if (opPressed == true)
+					@Override
+					public void handle(ActionEvent arg0) 
 					{
-						opPressed = false;
-						textfield.clear();
+						if (opPressed == true)
+						{
+							opPressed = false;
+							textfield.clear();
+						}
+						textfield.setText(textfield.getText() + "6");
 					}
-					
-					textfield.setText(textfield.getText() + "6");
 				}
-			}
-							);
+			);
 			
 		Button bt7 = new Button("7");
 			bt7.setPrefSize(35, 35);
 			bt7.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					if (opPressed == true)
+					@Override
+					public void handle(ActionEvent arg0) 
 					{
-						opPressed = false;
-						textfield.clear();
+						if (opPressed == true)
+						{
+							opPressed = false;
+							textfield.clear();
+						}
+						textfield.setText(textfield.getText() + "7");
 					}
-					
-					textfield.setText(textfield.getText() + "7");
 				}
-			}
-							);
+			);
 			
 		Button bt8 = new Button("8");
 			bt8.setPrefSize(35, 35);
 			bt8.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					if (opPressed == true)
+					@Override
+					public void handle(ActionEvent arg0) 
 					{
-						opPressed = false;
-						textfield.clear();
+						if (opPressed == true)
+						{
+							opPressed = false;
+							textfield.clear();
+						}
+						textfield.setText(textfield.getText() + "8");
 					}
-					
-					textfield.setText(textfield.getText() + "8");
 				}
-			}
-							);
+			);
 			
 		Button bt9 = new Button("9");
 			bt9.setPrefSize(35, 35);
 			bt9.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					if (opPressed == true)
+					@Override
+					public void handle(ActionEvent arg0) 
 					{
-						opPressed = false;
-						textfield.clear();
+						if (opPressed == true)
+						{
+							opPressed = false;
+							textfield.clear();
+						}
+						textfield.setText(textfield.getText() + "9");
 					}
-					
-					textfield.setText(textfield.getText() + "9");
 				}
-			}
-							);
+			);
 			
 		Button btEq = new Button("=");
 			btEq.setPrefSize(35, 35);
 			btEq.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					String textOutput;
-					
-					// store second number
-					num2 = Integer.parseInt(textfield.getText());
-					
-					// output results depending on the operation pressed
-					switch (opChosen)
+					@Override
+					public void handle(ActionEvent arg0) 
 					{
-						case "+":
-							result = num1 + num2;
-							
-							textOutput = Double.toString(result);
-							textfield.setText(textOutput); break;
-							
-						case "-":
-							result = num1 - num2;
-							
-							textOutput = Double.toString(result);
-							textfield.setText(textOutput); break;
-						case "*":
-							result = num1 * num2;
-							
-							textOutput = Double.toString(result);
-							textfield.setText(textOutput); break;
-						case "/":
-							result = num1 / num2;
-							
-							textOutput = Double.toString(result);
-							textfield.setText(textOutput); break;
+						String textOutput;
+						num2 = Integer.parseInt(textfield.getText()); // store second number
+						
+						// output results depending on the operation pressed
+						switch (opChosen)
+						{
+							case "+":
+								result = num1 + num2;
+								textOutput = Double.toString(result);
+								textfield.setText(textOutput); break;
+							case "-":
+								result = num1 - num2;
+								textOutput = Double.toString(result);
+								textfield.setText(textOutput); break;
+							case "*":
+								result = num1 * num2;
+								textOutput = Double.toString(result);
+								textfield.setText(textOutput); break;
+							case "/":
+								result = num1 / num2;
+								textOutput = Double.toString(result);
+								textfield.setText(textOutput); break;
+						}	
 					}
-					
 				}
-			}
-							);
+			);
 			
 		Button btAdd = new Button("+");
 			btAdd.setPrefSize(35, 35);
 			btAdd.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					opChosen = "+";
-					opPressed = true;
-					num1 = Double.parseDouble(textfield.getText());
+					@Override
+					public void handle(ActionEvent arg0) 
+					{
+						opChosen = "+";
+						opPressed = true;
+						num1 = Double.parseDouble(textfield.getText());
+					}
 				}
-			}
-							);
+			);
 			
 		Button btSub = new Button("-");
 			btSub.setPrefSize(35, 35);
 			btSub.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					opChosen = "-";
-					opPressed = true;
-					num1 = Double.parseDouble(textfield.getText());
+					@Override
+					public void handle(ActionEvent arg0) 
+					{
+						opChosen = "-";
+						opPressed = true;
+						num1 = Double.parseDouble(textfield.getText());
+					}
 				}
-			}
-							);
+			);
 			
 		Button btMult = new Button("x");
 			btMult.setPrefSize(35, 35);
 			btMult.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					opChosen = "*";
-					opPressed = true;
-					num1 = Double.parseDouble(textfield.getText());
+					@Override
+					public void handle(ActionEvent arg0) 
+					{
+						opChosen = "*";
+						opPressed = true;
+						num1 = Double.parseDouble(textfield.getText());
+					}
 				}
-			}
-							);
+			);
 			
 		Button btDiv = new Button("/");
 			btDiv.setPrefSize(35, 35);
 			btDiv.setOnAction(new EventHandler<ActionEvent> () 
-			{
-				@Override
-				public void handle(ActionEvent arg0) 
 				{
-					opChosen = "/";
-					opPressed = true;
-					num1 = Double.parseDouble(textfield.getText());
+					@Override
+					public void handle(ActionEvent arg0) 
+					{
+						opChosen = "/";
+						opPressed = true;
+						num1 = Double.parseDouble(textfield.getText());
+					}
 				}
-			}
-							);
+			);
 			
 		Button btClr = new Button("Clr");
 		btClr.setPrefSize(35, 35);
 		btClr.setOnAction(new EventHandler<ActionEvent> () 
-		{
-			@Override
-			public void handle(ActionEvent arg0) 
 			{
-				textfield.clear();
-				opChosen = "";
-				opPressed = false;
-				
+				@Override
+				public void handle(ActionEvent arg0) 
+				{
+					textfield.clear();
+					opChosen = "";
+					opPressed = false;
+				}
 			}
-		}
-						);
+		);
 		
 		// add buttons to grid	
 		GridPane grid = new GridPane();
@@ -381,7 +364,6 @@ public class JavaFxCalc extends Application
 		
 	} // end of Start method
 
-	
 	public static void main(String[] args)
 	{
 		launch(args);		

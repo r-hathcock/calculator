@@ -1,0 +1,12 @@
+# === BACK END ===
+
+# Format output to only include decimals if needed
+# Allow keystroke inputs(only numbers and operation symbols)
+# Allow negative number as an input
+
+# === DESIGN ===
+
+# Get rid of blue highlight on recently used button
+# Larger pane
+# Format all buttons and gridpane to fit larger screen
+# Colors of entire pane, buttons, text. Darker theme - grey potentially. 
